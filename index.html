@@ -6,10 +6,13 @@
     // JavaScript dentro da página carregada pelo iframe
     window.onload = function() {
       alert('JavaScript no iframe!');
+      alert(window.origin);
+      alert(window.location);
+      
     };
   </script>
 </head>
 <body>
-  <h1>Conteúdo do iframe</h1>
+  <h1 onclick="alert(window.origin);">Conteúdo do iframe 2</h1>
 </body>
 </html>
